@@ -2,9 +2,9 @@
 
 This section will build a Hyperledger Fabric blockchain network using Amazon Managed Blockchain. A combination of the AWS Console and the AWS CLI will be used. The process to create the network is as follows:
 
-* Provision a Cloud9 instance. We will use the Linux terminal that Cloud9 provides
+* Provision an AWS Cloud9 instance. We will use the Linux terminal that Cloud9 provides
 * Use the Amazon Managed Blockchain console to create a Fabric network and provision a peer node
-* From Cloud9, run a CloudFormation template to provision a VPC and a Fabric client node. You 
+* From Cloud9, run an AWS CloudFormation template to provision a VPC and a Fabric client node. You 
 will use the Fabric client node to administer the Fabric network
 * From the Fabric client node, create a Fabric channel, install and instantiate chaincode, and 
 query and invoke transactions on the Fabric network
@@ -33,7 +33,7 @@ aws s3 cp s3://managedblockchain-beta/service-2.json .
 aws configure add-model --service-model file://service-2.json --service-name managedblockchain
 ```
 
-## Step 1 - Create the Hyperledger Fabric blockchain network
+## Step 1 - Create the Hyperledger Fabric blockchain network 
 In the Amazon Managed Blockchain Console: https://console.aws.amazon.com/managedblockchain
 
 Make sure you are in the correct AWS region (i.e. us-east-1, also known as N. Virginia) and follow the steps below:
